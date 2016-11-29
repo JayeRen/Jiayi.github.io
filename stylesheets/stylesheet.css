@@ -363,6 +363,10 @@ Full-Width Styles
 #main_content {
   padding-top: 40px;
 }
+.pic{
+  font-size:24px;
+  color:cornflowerblue;
+}
 
 #footer_wrap {
   background: #212121;
