@@ -7,6 +7,7 @@
     <meta name="description" content="加一不二 : 这里是二二的博客哦">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/tabstyle.css">
 
     <title>加一不二</title>
   </head>
@@ -16,58 +17,61 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <!--<a id="forkme_banner" href="https://github.com/JayeRen/jiayi.github.io">View on GitHub</a>-->
-
           <img src="./images/smile.png">
           <h1 id="project_title">加一不二</h1>
-          <h2 id="project_tagline">这里是二二的博客哦</h2>
+          <h2 id="project_tagline">这里是二二的博客哦
+            <br>This is blog of Jiayi
 
-            <!--<section id="downloads">
-              <!--<a class="zip_download_link" href="https://github.com/JayeRen/jiayi.github.io/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/JayeRen/jiayi.github.io/tarball/master">Download this project as a tar.gz file</a>-->
+          </h2>
             </section>-->
-        </header>
+       
+          <div class="tab">
+            <button id="mainTab" class="tablinks" onclick="openPage(event, 'Main')">MainPage</button>
+            <button class="tablinks" onclick="openPage(event, 'Stock')">Homework</button>
+            <button class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
+            <button class="tablinks" onclick="openPage(event, 'Resume')">Resume</button>
+          </div>
+          </header>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <blockquote>
-<p>嘻嘻嘻嘻嘻嘻嘻！！！！
-现在你们看到的就是我的博客啦！！！！！</p>
-</blockquote>
 
+<!-- <p class="pic"><strong>先请你们看看大海</strong></p>
+<p><img id="pic1" src="./images/theOcean.png" alt="ocean"></p> -->
+<div id="Main" class="tabcontent">
+  <h1>
+  MainPage </h1>
+  <p>Hahhhhhhh</p>
+</div>
+<div id="Stock" class="tabcontent">
+  <h3>
+  <a  href="http://www-scf.usc.edu/~jiayiren/R6iEyUe2Ni1w.html" aria-hidden="true">Stock</a> </h3>
+  <p>You can see one of my homeworks (web-design course) here</p>
+</div>
 
-<p class="pic"><strong>先请你们看看大海</strong></p>
-<p><img id="pic1" src="./images/theOcean.png" alt="ocean"></p>
+<div id="Projects" class="tabcontent">
+  <h3>
+  <a href="./src/projects/tic-tac-toe.html" aria-hidden="true">Projects</a></h3>
+  <p>building up my projects</p>
+</div> 
 
-<h3>
-<a id="Stock" class="hw" href="http://jiayiren-stock.us-west-1.elasticbeanstalk.com/" aria-hidden="true">Stock</a> of erer</h3>
-
-<p>You can see one of my homeworks (web-design course) here</p>
-
-        
-<h3>
+<div id="Resume" class="tabcontent"> 
+  <h3>
+  <a  href="./src/resume.html" aria-hidden="true">Resume</a> </h3>
+  <p>Resume Link</p>
+</div>
+  <!-- <h3>
 <a id="leetcode" class="leetcode" href="./src/leetcode/leetcode.html" aria-hidden="true">Leetcode Notes</a> of erer</h3>
-
 <p>这里记录俺的leetcode刷题集锦</p>
 
-<h3>
-<a id="food" class="food" href="./src/food/food.html" aria-hidden="true">Food</a> eaten by erer</h3>
-
+<h3> -->
+<!-- <a id="food" class="food" href="./src/food/food.html" aria-hidden="true">Food</a> eaten by erer</h3>
 <p>这里记录俺吃吃吃的经历</p>
 
 <h3>
 <a id="life" class="life" href="./src/life/life.html" aria-hidden="true">Life</a> of Jiayi Ren</h3>
+<p>这里记录生活琐事啦</p> -->
 
-<p>这里记录生活琐事啦</p>
-        
-<h3>
-<a id="resume" class="resume" href="./src/resume.html" aria-hidden="true">Resume</a> of Jiayi Ren</h3>
-
-<p>Resume Link</p>
-
-    </div>
+</div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
@@ -76,7 +80,28 @@
       </footer>
     </div>
 
-    
-
   </body>
 </html>
+<script>
+  document.getElementById("Main").style.display = "block";
+  document.getElementById("mainTab").className += "active";
+  function openPage(event, tabname){
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabname).style.display = "block";
+    event.currentTarget.className += " active";
+
+  }
+</script>
