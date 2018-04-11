@@ -7,8 +7,13 @@
     <meta name="description" content="加一不二 : 这里是二二的博客哦">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/tabstyle.css">
-
+      <!-- bootstrap     -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
     <title>加一不二</title>
   </head>
 
@@ -24,57 +29,53 @@
           </h2>
            
        
-          <div class="tab">
-            <button id="mainTab" class="tablinks" onclick="openPage(event, 'Main')">MainPage</button>
-            <button class="tablinks" onclick="openPage(event, 'Stock')">Homework</button>
-            <button class="tablinks" onclick="openPage(event, 'Projects')">Projects</button>
-            <button class="tablinks" onclick="openPage(event, 'Resume')">Resume</button>
-          </div>
-          </header>
+            
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="homework-tab" data-toggle="tab" href="#homework" role="tab" aria-controls="homework" aria-selected="false">Homework</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-selected="false">Resume</a>
+          </li>
+        </ul>
+        </header>
     </div>
 
 
+    <div class="tab-content" id="myTabContent">
+        <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
+          <h1> MainPage </h1>
+            <div>
+              <p><img id="pic1" src="./images/theOcean.png" alt="ocean" height ="60%" width="100%" ></p>
+            </div>
+          <p>Hahhhhhhh</p>
+        </div>
 
+        <div class="tab-pane fade" id="homework" role="tabpanel" aria-labelledby="homework-tab">
+          <h3>Stock</h3>
+          <p><a  href="http://www-scf.usc.edu/~jiayiren/R6iEyUe2Ni1w.html" aria-hidden="true">You can see one of my homeworks (web-design course) here</a></p>
+        </div>
 
-<div id="Main" class="tabcontent">
-  <h1> MainPage </h1>
-  <div>
-  <p><img id="pic1" src="./images/theOcean.png" alt="ocean" height ="60%" width="100%" ></p>
-</div>
-  <p>Hahhhhhhh</p>
-  
-</div>
-<div id="Stock" class="tabcontent">
-  <h3>Stock</h3>
-  <p><a  href="http://www-scf.usc.edu/~jiayiren/R6iEyUe2Ni1w.html" aria-hidden="true">You can see one of my homeworks (web-design course) here</a></p>
-</div>
+        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+          <h3>Projects</h3>
+          <p>building up my projects</p>
+          <ul>
+            <li><a href="./src/projects/tic-tac-toe.html" aria-hidden="true">tic-tactoe</a></li>
+            <li><a href="./src/projects/particles.html" aria-hidden="true">Particles</a></li>
+          </ul>
+        </div> 
 
-<div id="Projects" class="tabcontent">
-  <h3>Projects</h3>
-  <p>building up my projects</p>
-  <ul>
-    <li><a href="./src/projects/tic-tac-toe.html" aria-hidden="true">tic-tactoe</a></li>
-    <li><a href="./src/projects/particles.html" aria-hidden="true">Particles</a></li>
-  </ul>
-</div> 
-
-<div id="Resume" class="tabcontent"> 
-  <h3>Resume</h3>
-  <p><a  href="./src/resume.html" aria-hidden="true">Resume Link</a> </p>
-</div>
-  <!-- <h3>
-<a id="leetcode" class="leetcode" href="./src/leetcode/leetcode.html" aria-hidden="true">Leetcode Notes</a> of erer</h3>
-<p>这里记录俺的leetcode刷题集锦</p>
-
-<h3> -->
-<!-- <a id="food" class="food" href="./src/food/food.html" aria-hidden="true">Food</a> eaten by erer</h3>
-<p>这里记录俺吃吃吃的经历</p>
-
-<h3>
-<a id="life" class="life" href="./src/life/life.html" aria-hidden="true">Life</a> of Jiayi Ren</h3>
-<p>这里记录生活琐事啦</p> -->
-
-</div>
+        <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab"> 
+          <h3>Resume</h3>
+          <p><a  href="./src/resume.html" aria-hidden="true">Resume Link</a> </p>
+        </div>
+    </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
@@ -85,26 +86,3 @@
 
   </body>
 </html>
-<script>
-  document.getElementById("Main").style.display = "block";
-  document.getElementById("mainTab").className += "active";
-  function openPage(event, tabname){
-    var i, tabcontent, tablinks;
-
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace("active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabname).style.display = "block";
-    event.currentTarget.className += " active";
-
-  }
-</script>
