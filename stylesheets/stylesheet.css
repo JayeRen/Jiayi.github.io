@@ -3,16 +3,18 @@ Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
 
-@import url(github-light.css);
+/*@import url(github-light.css);*/
 
 html{
     margin: 0 auto;
     text-align: center;
 }
 body{
-    width: 80%;
-    /* left: auto;*/
     margin: 0 auto;
+    text-align: center;
+    /*width: 80%;*/
+    /* left: auto;*/
+    
 }
 
 ol, ul {
@@ -21,8 +23,9 @@ ol, ul {
 
 
 div {
+  margin: 0 auto;
   text-align: center;
-    margin: 0 auto;
+    
 }
 
 h1,h2,h3{
