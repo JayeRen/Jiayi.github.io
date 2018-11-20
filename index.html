@@ -5,22 +5,22 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="加一不二 : 这里是二二的博客哦">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css"> -->
       <!-- bootstrap     -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      
+       -->
     <title>加一不二</title>
   </head>
 
-  <body>
+  <body class = "is-preload">
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
+   <!--  <div id="header_wrap" class="outer">
         <header class="inner">
           <img src="./images/smile.png">
           <h1 id="project_title">加一不二</h1>
@@ -34,9 +34,9 @@
           <li class="nav-item">
             <a class="nav-link active navbar-nav navbar-center" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" id="homework-tab" data-toggle="tab" href="#homework" role="tab" aria-controls="homework" aria-selected="false">Homework</a>
-          </li> -->
+          </li>
           <li class="nav-item">
             <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
           </li>
@@ -46,10 +46,21 @@
         </ul>
       </div>
         </header>
-    </div>
+    </div> -->
+
+    <!-- Header -->
+      <header id="header">
+            <div class="inner">
+              <h1><b> 加一不二(Jiayi's) </b></h1>
+              <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+              <p><b>I am Jiayi,</b> and <br />
+              this is my personal blog.<br />
+              Welcome and thank you for being here.</p>
+            </div>
+        </header>
 
 
-    <div class="tab-content" id="myTabContent">
+   <!--  <div class="tab-content" id="myTabContent">
         <div id="home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="home-tab">
           <h1> MainPage </h1>
             <div>
@@ -61,9 +72,7 @@
           <br>
         </div>
 
-       <!--  <div class="tab-pane fade" id="homework" role="tabpanel" aria-labelledby="homework-tab"> -->
-          
-        <!-- </div> -->
+       
 
         <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
           <h3>Projects</h3>
@@ -93,14 +102,142 @@
           <p><a  href="./src/resume.html" aria-hidden="true">Resume Link</a> </p>
           <object width=60% height="800" type="application/pdf" data = "./images/JiayiRen_gmail.pdf">
         </div>
-    </div>
+    </div> -->
+
+    <!-- Main -->
+      <div id="main">
+
+        <!-- One -->
+          <section id="one">
+            <header class="major">
+              <h2>About Jiayi</h2>
+            </header>
+            <p>I am currently studying Master's program of Computer Science in USC. </p><br />
+            I will graduate on December, 2018......
+            </p>
+            <ul class="actions">
+              <li><a href="#" class="button">Learn More</a></li>
+            </ul>
+          </section>
+
+        <!-- Two -->
+          <section id="two">
+            <h1><b>Projects</b></h1>
+            <h2>Graphics</h2>
+            <div class="row">
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/jello.html" aria-hidden="true"><img src="images/screenshot/jellO-shot.png" alt="" width = "350px"/></a>
+                <h3>Jell-O</h3>
+                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+              </article>
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/particles.html" aria-hidden="true"><img src="images/screenshot/particle-shot.png" alt="" width = "350px"/></a>
+                <h3>Particles</h3>
+                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+              </article>
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/jacobi-ik.html" aria-hidden="true"><img src="images/screenshot/IK-shot.png" alt="" width = "350px"/></a>
+                <h3>Jacobi-IK</h3>
+                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+              </article>
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/metaballs.html" aria-hidden="true"><img src="images/screenshot/metaballs-shot.png" alt="" width = "350px"/></a>
+                <h3>2D Metaballs</h3>
+                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+              </article>
+            </div>
+            <h2>Web</h2>
+            <div class="row">
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/stock-web.html" aria-hidden="true"><img src="images/screenshot/stockPage-shot.png" alt="" width = "350px"/></a>
+                <h3>Web-design: Stock search</h3>
+                <p>worked from course CSCI-571(2017 fall)</p>
+              </article>
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/stock-app-Android.html" aria-hidden="true"><img src="images/screenshot/stockAndroid-shot.png" alt="" width = "350px"/></a>
+                <h3>Android-design: Stock search</h3>
+                <p>worked from course CSCI-571(2017 fall)</p>
+              </article>
+            </div>
+            <h2>Game</h2>
+            <div class="row">
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/tic-tac-toe.html" aria-hidden="true"><img src="images/screenshot/tic-shot.png" alt="" width = "350px"/></a>
+                <h3>tic-tac-toe</h3>
+                <p>studied from React-JS tutorial</p>
+              </article>
+              <article class="col-6 col-12-xsmall work-item">
+                <a href="./src/projects/Horescape.html" aria-hidden="true"><img src="images/screenshot/horescape-shot.png" alt="" width = "350px"/></a>
+                <h3>Horescape</h3>
+                <p>worked from course CSCI-526(2017 summer)</p>
+              </article>
+            </div>
+            <ul class="actions">
+              <li><a href="#" class="button">Full Portfolio</a></li>
+            </ul>
+          </section>
+
+        <!-- Three -->
+          <section id="three">
+            <h2>Get In Touch</h2>
+            <p>If you have any concerns, please feel free to contact me.</p>
+            <div class="row">
+              <div class="col-6 col-12-xsmall">
+                <ul class="labeled-icons">
+                  <li>
+                    <h3 class="icon fa-home"><span class="label">Address</span></h3>
+                    LA downtown<br />
+                    Los Angeles, CA 90012<br />
+                    United States
+                  </li>
+                  <li>
+                    <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                    213-595-8214
+                  </li>
+                  <li>
+                    <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                    <a href="#">renjiayi93@gmail.com</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-12-xsmall">
+              <h3>Resume</h3>
+                    <p><a  href="./src/resume.html" aria-hidden="true">Resume Link</a> </p>
+                    <!-- <object width=60% height="800" type="application/pdf" data = "./images/JiayiRen_gmail.pdf">
+                    </object> -->
+                  </div>
+            </div>
+            
+          </section>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
+    <!-- <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">加一不二 maintained by <b>JIayiRen</b></p>
       </footer>
-    </div>
+    </div> -->
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://github.com/JayeRen" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/jiayi-ren-380043158/" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; JYR</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </footer>
+
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
 
   </body>
 </html>
